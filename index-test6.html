@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>opacity</title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	    
+	    }
+.wa{
+	width:286px;
+	height:160px;
+	background: url(image/img_21.jpg);
+
+}
+.demo-l{
+	padding-top: 110px;
+}
+.demo{
+	width:285px;
+	height:50px;
+    line-height: 50px;
+    background-color:#000000;
+    opacity: 0.6;
+}
+.demo p{
+    color: red;
+}
+</style>
+</head>
+<body>    
+<div class="wa">
+<div class="demo-l">
+	<div class="demo">
+    <p>背景透明，文字也透明</p>
+</div>
+</div>
+	</div>
+
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="public.css">
+</head>
+<style type="text/css">
+* { 
+margin: 0; 
+padding: 0; 
+} 
+body { 
+padding: 50px 50px; 
+} 
+.btn-select { 
+position: relative; 
+display: inline-block; 
+width: 150px; 
+height: 25px; 
+background-color: #f80; 
+font: 14px/20px "Microsoft YaHei"; 
+color: #fff; 
+} 
+.btn-select .cur-select { 
+position: absolute; 
+display: block; 
+width: 150px; 
+height: 25px; 
+line-height: 25px; 
+background: #f80 url(ico-arrow.png) no-repeat 125px center; 
+text-indent: 10px; 
+} 
+.btn-select:hover .cur-select { 
+background-color: #f90; 
+} 
+.btn-select select { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 150px; 
+height: 25px; 
+opacity: 0; 
+filter: alpha(opacity: 0;); 
+font: 14px/20px "Microsoft YaHei"; 
+color: #f80; 
+} 
+.btn-select select option { 
+text-indent: 10px; 
+} 
+.btn-select select option:hover { 
+background-color: #f80; 
+color: #fff; 
+} 
+</style>
+</head>
+<body>
+
+    <form> 
+<a class="btn-select" id="btn_select"> 
+<span class="cur-select">请选择</span> 
+<select> 
+<option value="选项一">选项一</option> 
+<option value="选项一">选项二</option> 
+<option >选项三</option> 
+<option >选项三</option> 
+<option>选项四</option> 
+<option>选项五</option> 
+</select> 
+</a> 
+</form> 
+</body>
+</html>
